@@ -14,4 +14,4 @@ RUN apt-get update && \
 VOLUME /root/.parity
 
 EXPOSE 8545
-ENTRYPOINT parity --jsonrpc-interface all --jsonrpc-hosts all
+ENTRYPOINT ["parity", "--jsonrpc-interface", "all", "--jsonrpc-hosts", "all"]
