@@ -3,7 +3,7 @@ FROM ubuntu
 RUN apt-get update && \
     apt-get install -y wget libssl-dev && \
     cd /tmp && \
-    wget http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-unknown-linux-gnu/parity_1.8.11_ubuntu_amd64.deb && \
+    wget http://d1h4xl4cr1h0mo.cloudfront.net/v1.9.5/x86_64-unknown-linux-gnu/parity_1.9.5_ubuntu_amd64.deb && \
     dpkg -i parity*.deb && \
     rm parity*.deb && \
     apt-get autoremove wget -y && \
